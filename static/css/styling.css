@@ -1,0 +1,128 @@
+{% load static %}
+body{
+	margin:0px;
+	padding:0px;
+}
+
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+	font-family: 'Poppins', sans-serif;
+}
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+nav{
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	width:100%;
+	border:1px solid #d9b3ff;
+	background-color:#d9b3ff;
+	
+	left:0;
+	top:0;
+	z-index:100;
+}
+
+.logo img{
+	height:150px;
+}
+
+nav .menu{
+	display:flex;
+}
+nav .menu li a{
+	height:40px;
+	line-height:43px;
+	margin:0px;
+	padding:0px 22px;
+	display:flex;
+	font-size:0.9rem;
+	text-transform:uppercase;
+	font-weight:500;
+	color: #330066;
+	letter-spacing:1px;
+}
+.search{
+	width:250px;
+	height:40px;
+	background-color:rgba(245,245,245,0.8);
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-radius:20px;
+	padding:0px, 20px;
+}
+.search input{
+	width:100%;
+	height:30px;
+	border:none;
+	outline:none;
+	background-color:transparent;
+}
+.search i{
+	color:#3a3a3a;
+}
+nav .menu li a:hover{
+	background-color:#ff0066;
+	color:#ffffff;
+	box-shadow:5px 10px 30px rgba(53,53,53,0.1);
+	transition:all ease 0.2s;
+}
+
+.text{
+	text-align:center;
+	color:black;
+	background-color:white;
+	margin:200px;
+}
+
+
+.m{
+	margin:0px;
+	padding:0px;
+	min-height:70%;
+	background-image:linear-gradient(rgba(243,245,251,0.3),rgba(243,245,251,0.3)),url("film-reel.png");
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-color:lighter;
+}
+
+
+.m1{
+	background-image:linear-gradient(rgba(243,245,251,0.3),rgba(243,245,251,0.3)),url("film-reel.png");
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	
+}
+
+.h h2{
+	text-align:left;
+	color:white;
+	padding-left:50px;
+}
+
+h2{
+	padding-left:50px;
+}
+
+.sdr{
+	min-height:100%;
+	width:100%;
+}
+
+
+.f{
+	color:#330066;
+	text-align:center;
+	background-color:#d9b3ff;
+	width:100%;
+	margin : 0px;
+}

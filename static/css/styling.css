@@ -81,7 +81,7 @@ nav .menu li a{
 	color:#3a3a3a;
 }
 nav .menu li a:hover{
-	background-color:#ff0066;
+	background-color:black;
 	border-radius:5px;
 	color:#ffffff;
 	box-shadow:5px 10px 30px rgba(53,53,53,0.1);
@@ -129,6 +129,7 @@ h2{
 }
 
 .sdr{
+    margin-top:150px;
 	min-height:100%;
 	width:100%;
 }
@@ -141,8 +142,24 @@ h2{
 	width:100%;
 	margin : 0px;
 }
+.f1{
+	color:white;
+	text-align:center;
+	background-color:black;
+	width:100%;
+	margin : 0px;
+}
 
 .f a{
+    font-size:30px;
+    text-align:center;
+    color:white;
+    background-color:#006666;
+    text-decoration:none;
+    padding:20px;
+    border-radius:5px;
+}
+.f1 a{
     font-size:30px;
     text-align:center;
     color:white;

@@ -1,4 +1,15 @@
 {% load static %}
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
 body{
 	margin:0px;
 	padding:0px;
@@ -22,8 +33,9 @@ nav{
 	align-items:center;
 	width:100%;
 	border:1px solid #d9b3ff;
-	background-color:#d9b3ff;
-	
+	background-color:#006666;
+	position:fixed;
+	top:0;
 	left:0;
 	top:0;
 	z-index:100;
@@ -45,7 +57,7 @@ nav .menu li a{
 	font-size:0.9rem;
 	text-transform:uppercase;
 	font-weight:500;
-	color: #330066;
+	color: white;
 	letter-spacing:1px;
 }
 .search{
@@ -70,6 +82,7 @@ nav .menu li a{
 }
 nav .menu li a:hover{
 	background-color:#ff0066;
+	border-radius:5px;
 	color:#ffffff;
 	box-shadow:5px 10px 30px rgba(53,53,53,0.1);
 	transition:all ease 0.2s;
@@ -87,7 +100,8 @@ nav .menu li a:hover{
 	margin:0px;
 	padding:0px;
 	min-height:70%;
-	background-image:linear-gradient(rgba(243,245,251,0.3),rgba(243,245,251,0.3)),url("film-reel.png");
+	margin-top:150px;
+	background-image:linear-gradient(rgba(243,245,251,0.3),rgba(243,245,251,0.3)),url("/static/images/film-reel.png");
 	background-position:center;
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -96,7 +110,8 @@ nav .menu li a:hover{
 
 
 .m1{
-	background-image:linear-gradient(rgba(243,245,251,0.3),rgba(243,245,251,0.3)),url("film-reel.png");
+    margin-top:150px;
+	background-image:linear-gradient(rgba(243,245,251,0.3),rgba(243,245,251,0.3)),url("/static/images/film-reel.png");
 	background-position:center;
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -120,9 +135,19 @@ h2{
 
 
 .f{
-	color:#330066;
+	color:black;
 	text-align:center;
-	background-color:#d9b3ff;
+	background-color:white;
 	width:100%;
 	margin : 0px;
+}
+
+.f a{
+    font-size:30px;
+    text-align:center;
+    color:white;
+    background-color:#006666;
+    text-decoration:none;
+    padding:20px;
+    border-radius:5px;
 }

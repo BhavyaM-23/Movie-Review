@@ -25,11 +25,18 @@ urlpatterns = [
     path('shortfilms/',views.shortfilms),
     path('genres/',views.genres),
     path('about/',views.about),
+    path('gully/',views.gully),
+    path('narappa/',views.narappa),
+
     #paths from movies
     path('movies/main/',views.main),
     path('movies/shortfilms/',views.shortfilms),
     path('movies/genres/',views.genres),
     path('movies/about/',views.about),
+    path('movies/msdhoni/', views.dhoni),
+    path('movies/janatha/',views.janatharev),
+    path('movies/gully/',views.gully),
+    path('movies/avrev/',views.avrev),
     #paths from shortfilms
     path('shortfilms/main/',views.main),
     path('shortfilms/movies/',views.movies),
@@ -41,6 +48,16 @@ urlpatterns = [
     path('genres/movies/',views.movies),
     path('genres/shortfilms/',views.shortfilms),
     path('genres/about/',views.about),
+    # paths from genres/action
+    path('genres/action/',views.action),
+    path('genres/action/janatha/',views.janatharev),
+    path('genres/action/narappa/',views.narappa),
+    path('genres/action/avrev/',views.avrev),
+    #paths from genres/drama
+    path('genres/drama/',views.drama),
+    path('genres/drama/gully/',views.gully),
+    #paths from genres/horror
+    path('genres/horror/',views.horror),
     #paths from about
     path('about/main/',views.main),
     path('about/movies/',views.movies),

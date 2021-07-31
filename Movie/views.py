@@ -18,3 +18,27 @@ def about(request):
 
 def sdreview(request):
     return render(request,"sdreview.html")
+
+def janatharev(request):
+    return render(request,"janatharev.html")
+
+def dhoni(request):
+    return render(request,"dhoni.html")
+
+def gully(request):
+    return render(request,"gully.html")
+
+def avrev(request):
+    return render(request,"avrev.html")
+
+def narappa(request):
+    return render(request,"narappa.html")
+
+def action(request):
+    return render(request,"action.html")
+
+def drama(request):
+    return render(request,"drama.html")
+
+def horror(request):
+    return render(request,"horror.html")

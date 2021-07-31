@@ -1,17 +1,20 @@
-{%load static%}
+{% load static %}
 <html>
 	<head>
 		<title> Movie Review </title>
-		<link rel="stylesheet" href="{%static 'css/styling.css'%}">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+		<link rel="shortcut icon" href="{%static 'images/logo.png' %}">
+		<link rel="stylesheet" href="{% static 'css/styling.css' %}">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="shortcut icon" href="{%static 'images/logo.png' %}">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,400;1,500&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<nav>
-			<a href="#" class="logo"> <img src="{%static 'images/logo.png'%}"/> </a>
+			<a href="#" class="logo"> <img src="{%static 'images/logo.png' %}"/> </a>
 			<ul class="menu">
 				<li> <a href="main/"> Home </a> </li>
 				<li> <a href="movies/">Movies </a> </li>
@@ -24,23 +27,29 @@
 				<i class="fa fa-search" style="color:black"></i>
 			</div>
 		</nav>
-		<div class="g" >
-
-				<h2> GENRES </h2>
+		<div class="m">
+				<br>
+				<h2> Drama </h2>
 				<br>
 				<hr>
 				<br>
-				<a href="action/"> <img src="{%static 'images/action.png'%}" height="200" width="200"> </a>
-				<a href="horror/"> <img src="{%static 'images/horror-genre.jpg'%}" height="200" width="200"> </a>
-				<a href="#"> <img src="{%static 'images/comedy.png'%}" height="200" width="200"> </a>
-				<a href="#"> <img src="{%static 'images/scifi.png'%}" height="200" width="200"> </a>
-				<a href="drama/"> <img src="{%static 'images/drama.png'%}" height="200" width="200"> </a>
-				<a href="#"> <img src="{%static 'images/kids.png'%}" height="200" width="200"> </a>
+				<table>
+					<tr> 
+						<td> <img src="{%static 'images/drama.png' %}" height="200" width="200"> </td>
+						<td>
+						<td>
+						<td style="background-color:black;color:white;text-align:center;font-style:bold;"> <img src="{%static 'images/m4.jpg' %}" height="200" width="200">
+						<br> <br> <span style="font-size:20px;align:left;color:006666;">Movie : </span> GULLY BOY <br>
+						<span style="font-size:20px;align:left;color:006666;">Cast :</span> Ranveer Singh,AliaBhatt <br>
+						<span style="font-size:20px;align:left;color:006666;">Language :</span> Hindi
+							<br> <a href="gully/" style="text-decoration:None;color:yellow;"> Read the review </a>
+						</td>
+						
+					</tr>
+				</table>
+			</div>
 
-
-		</div>
-
-			<div class="f1">
+			<div class="f">
 				<p style="font-size:20px"> Connect Us Here<br>
 				<a href="http://www.youtube.com" target="_blank"class="fa fa-youtube" ></a>
 				 <a href="http://www.facebook.com" class="fa fa-facebook" ></a>

@@ -2,16 +2,19 @@
 <html>
 	<head>
 		<title> Movie Review </title>
-		<link rel="stylesheet" href="{%static 'css/styling.css'%}">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+		<link rel="shortcut icon" href="{%static 'images/logo.png' %}">
+		<link rel="stylesheet" href="{% static 'css/styling.css' %}">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="shortcut icon" href="{%static 'images/logo.png' %}">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,400;1,500&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<nav>
-			<a href="#" class="logo"> <img src="{%static 'images/logo.png'%}"/> </a>
+			<a href="#" class="logo"> <img src="{%static 'images/logo.png' %}"/> </a>
 			<ul class="menu">
 				<li> <a href="main/"> Home </a> </li>
 				<li> <a href="movies/">Movies </a> </li>
@@ -25,27 +28,30 @@
 			</div>
 		</nav>
 		<div class="m">
-			<h2> Short Films </h2>
-			<br>
-			<hr>
-			<br>
-			<table>
-				<tr> 
-					<td> <img src="{%static 'images/shortf.png'%}" height="200" width="200"> </td>
+				<br>
+				<h2> Horror </h2>
+				<br>
+				<hr>
+				<br>
+				<table>
+					<tr> 
+						<td> <img src="{%static 'images/horror-genre.jpg' %}" height="200" width="200"> </td>
+						<td>
 					<td>
 					<td>
-					<td style="background-color:black;color:white;text-align:center;font-style:bold;"> <img src="{%static 'images/sd.png'%}" height="200" width="200">
-					<br> <br><span style="font-size:20px;align:left;color:006666;"> ShortFilm :</span> Software Developer <br>
-					<span style="font-size:20px;align:left;color:006666;">Cast :</span> Shanmukh Jaswanth , Vyshnavi Chaithanya
-						<br> <a href="sdreview/" style="text-decoration:None;color:yellow;"> Read the review </a>
+					<td>
+					<td style="background-color:black;color:white;text-align:center;font-style:bold;"> <img src="{%static 'images/conjuring3.jpg'%}" height="200" width="200">
+					<br> <br> <span style="font-size:20px;align:left;color:006666;">Movie :</span> THE CONJURING<br>devil made me do it <br>
+					<span style="font-size:20px;align:left;color:006666;">Cast:</span> Patrick Wilson , Vera Farmiga  <br>
+					<span style="font-size:20px;align:left;color:006666;">Language :</span> English,Hindi
+						<br> <a href="#" style="text-decoration:None;color:yellow;"> Read the review </a>
 					</td>
-					
-				</tr>
-			</table>
+						
+					</tr>
+				</table>
+			</div>
 
-			
-		</div>
-		<div class="f">
+			<div class="f">
 				<p style="font-size:20px"> Connect Us Here<br>
 				<a href="http://www.youtube.com" target="_blank"class="fa fa-youtube" ></a>
 				 <a href="http://www.facebook.com" class="fa fa-facebook" ></a>

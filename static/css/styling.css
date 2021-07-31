@@ -32,7 +32,7 @@ nav{
 	justify-content:space-around;
 	align-items:center;
 	width:100%;
-	border:1px solid #d9b3ff;
+
 	background-color:#006666;
 	position:fixed;
 	top:0;
@@ -99,7 +99,7 @@ nav .menu li a:hover{
 .m{
 	margin:0px;
 	padding:0px;
-	min-height:70%;
+	height:auto;
 	margin-top:150px;
 	background-image:linear-gradient(rgba(243,245,251,0.3),rgba(243,245,251,0.3)),url("/static/images/film-reel.png");
 	background-position:center;
@@ -107,15 +107,40 @@ nav .menu li a:hover{
 	background-size:cover;
 	background-color:lighter;
 }
+.g{
+	margin:0px;
+	padding:0px;
+	min-height:70%;
+	margin-top:150px;
+    background-color:white;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-color:lighter;
+}
 
+.g a{
+    padding:10px 0px;
+    margin:10px;
+    border-radius:20px;
+    float:left;
+    height:250px;
+    width:200px;
+    background-color:006666;
 
+}
+
+.m  image a:hover{
+    height:300;
+    width:300;
+}
 .m1{
     margin-top:150px;
 	background-image:linear-gradient(rgba(243,245,251,0.3),rgba(243,245,251,0.3)),url("/static/images/film-reel.png");
 	background-position:center;
 	background-repeat:no-repeat;
 	background-size:cover;
-	
+
 }
 
 .h h2{
@@ -136,6 +161,7 @@ h2{
 
 
 .f{
+    margin-top:400px;
 	color:black;
 	text-align:center;
 	background-color:white;

@@ -20,47 +20,30 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.main),
-    path('main/',views.main),
-    path('movies/',views.movies),
-    path('shortfilms/',views.shortfilms),
-    path('genres/',views.genres),
-    path('about/',views.about),
-    path('gully/',views.gully),
-    path('narappa/',views.narappa),
+    path('main/',views.main,name='home'),
+    path('movies/',views.movies,name='movies'),
+    path('shortfilms/',views.shortfilms,name='shortfilms'),
+    path('genres/',views.genres,name='genres'),
+    path('about/', views.about, name='about'),
+path('search-movies/',views.search,name='search-movies'),
+    #path for movies
 
-    #paths from movies
-    path('movies/main/',views.main),
-    path('movies/shortfilms/',views.shortfilms),
-    path('movies/genres/',views.genres),
-    path('movies/about/',views.about),
-    path('movies/msdhoni/', views.dhoni),
-    path('movies/janatha/',views.janatharev),
-    path('movies/gully/',views.gully),
-    path('movies/avrev/',views.avrev),
-    #paths from shortfilms
-    path('shortfilms/main/',views.main),
-    path('shortfilms/movies/',views.movies),
-    path('shortfilms/genres/',views.genres),
-    path('shortfilms/about/',views.about),
-    path('shortfilms/sdreview/',views.sdreview),
-    #paths from genres
-    path('genres/main/',views.main),
-    path('genres/movies/',views.movies),
-    path('genres/shortfilms/',views.shortfilms),
-    path('genres/about/',views.about),
-    # paths from genres/action
-    path('genres/action/',views.action),
-    path('genres/action/janatha/',views.janatharev),
-    path('genres/action/narappa/',views.narappa),
-    path('genres/action/avrev/',views.avrev),
-    #paths from genres/drama
-    path('genres/drama/',views.drama),
-    path('genres/drama/gully/',views.gully),
-    #paths from genres/horror
-    path('genres/horror/',views.horror),
-    #paths from about
-    path('about/main/',views.main),
-    path('about/movies/',views.movies),
-    path('about/shortfilms/',views.shortfilms),
-    path('about/genres/',views.genres),
+    path('gully/',views.gully,name='gully'),
+    path('narappa/',views.narappa,name='narappa'),
+    path('msdhoni/', views.dhoni,name='msdhoni'),
+    path('janathagarage/',views.janatharev,name='janatha'),
+    path('alavaikuntapuramlo/',views.avrev,name='av'),
+    path('jathiratnalu/',views.jathi,name='jathi'),
+    path('bahubali/',views.bahubali,name='bahubali'),
+    path('kabali/',views.kabali,name="kabali"),
+    #paths for shortfilms
+
+    path('sdreview/',views.sdreview,name='sd'),
+
+    # paths for genres
+    path('action/',views.action,name='action'),
+    path('drama/',views.drama,name='drama'),
+    path('horror/',views.horror,name='horror'),
+    path('comedy/',views.comedy,name='comedy'),
+
 ]

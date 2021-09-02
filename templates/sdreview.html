@@ -20,8 +20,10 @@
 				<li> <a href="about/"> About Us</a> </li>
 			</ul>
 			<div class="search">
-				<input type="text" placeholder="Search for favorite films"/>
-				<i class="fa fa-search" style="color:black"></i>
+				<form action="{% url 'search-movies' %}" method="get"></form>
+				<input type="text" id="input" placeholder="Search for favorite films" onkeyup="fun()"/>
+				<button type="submit" style="border:none;background:transparent;"><i class="fa fa-search" style="font-size:20px;color:black"></i></button>
+				</form>
 			</div>
 		</nav>
 		<div class="sdr">

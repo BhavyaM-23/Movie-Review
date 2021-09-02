@@ -13,15 +13,17 @@
 		<nav>
 			<a href="#" class="logo"> <img src="{%static 'images/logo.png'%}"/> </a>
 			<ul class="menu">
-				<li> <a href="main/"> Home </a> </li>
-				<li> <a href="movies/">Movies </a> </li>
-				<li> <a href="shortfilms/">ShortFilms </a> </li>
-				<li> <a href="genres/"> Genres</a> </li>
-				<li> <a href="about/"> About Us</a> </li>
+				<li> <a href="{%url 'home'%}"> Home </a> </li>
+				<li> <a href="{% url 'movies'%}">Movies </a> </li>
+				<li> <a href="{% url 'shortfilms'%}">ShortFilms </a> </li>
+				<li> <a href="{% url 'genres'%}"> Genres</a> </li>
+				<li> <a href="{% url 'about'%}"> About Us</a> </li>
 			</ul>
 			<div class="search">
-				<input type="text" placeholder="Search for favorite films"/>
-				<i class="fa fa-search" style="color:black"></i>
+				<form action="{% url 'search-movies' %}" method="get"></form>
+				<input type="text" id="input" placeholder="Search for favorite films" onkeyup="fun()"/>
+				<button type="submit" style="border:none;background:transparent;"><i class="fa fa-search" style="font-size:20px;color:black"></i></button>
+				</form>
 			</div>
 		</nav>
 		<div class="g" >
@@ -30,11 +32,11 @@
 				<br>
 				<hr>
 				<br>
-				<a href="action/"> <img src="{%static 'images/action.png'%}" height="200" width="200"> </a>
-				<a href="horror/"> <img src="{%static 'images/horror-genre.jpg'%}" height="200" width="200"> </a>
-				<a href="#"> <img src="{%static 'images/comedy.png'%}" height="200" width="200"> </a>
+				<a href="{% url 'action'%}"> <img src="{%static 'images/action.png'%}" height="200" width="200"> </a>
+				<a href="{% url 'horror'%}"> <img src="{%static 'images/horror-genre.jpg'%}" height="200" width="200"> </a>
+				<a href="{% url 'comedy'%}"> <img src="{%static 'images/comedy.png'%}" height="200" width="200"> </a>
 				<a href="#"> <img src="{%static 'images/scifi.png'%}" height="200" width="200"> </a>
-				<a href="drama/"> <img src="{%static 'images/drama.png'%}" height="200" width="200"> </a>
+				<a href="{% url 'drama'%}"> <img src="{%static 'images/drama.png'%}" height="200" width="200"> </a>
 				<a href="#"> <img src="{%static 'images/kids.png'%}" height="200" width="200"> </a>
 
 

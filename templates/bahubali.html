@@ -1,0 +1,91 @@
+{%load static%}
+<html>
+	<head>
+		<title> Movie Review </title>
+		<link rel="stylesheet" href="{%static 'css/styling.css'%}">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="shortcut icon" href="{%static 'images/logo.png' %}">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,400;1,500&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<nav>
+			<a href="#" class="logo"> <img src="{%static 'images/logo.png'%}"/> </a>
+			<ul class="menu">
+				<li> <a href="main/"> Home </a> </li>
+				<li> <a href="movies/">Movies </a> </li>
+				<li> <a href="shortfilms/">ShortFilms </a> </li>
+				<li> <a href="genres/"> Genres</a> </li>
+				<li> <a href="about/"> About Us</a> </li>
+			</ul>
+			<div class="search">
+				<form action="{% url 'search-movies' %}" method="get"></form>
+				<input type="text" id="input" placeholder="Search for favorite films" onkeyup="fun()"/>
+				<button type="submit" style="border:none;background:transparent;"><i class="fa fa-search" style="font-size:20px;color:black"></i></button>
+				</form>
+			</div>
+		</nav>
+		<div class="sdr">
+			<h2 style="padding-left:50px;"> Movies/Bahubali-The Beginning </h2>
+			<hr>
+			<table>
+				<tr> 
+					<td>
+					<td>
+					<td style="background-color:black;color:white;text-align:center;font-style:bold;"> <img src="{%static 'images/m2.jpg'%}" height="350" width="350">
+					<br> <br> <span style="align:left;color:yellow;">Cast :</span> Prabhas,Rana Daggubati,Tamannaah,<br>Anushka Shetty,Ramya Krishna,Sathyaraj,Nassar <br>
+					<span style="align:left;color:yellow;">Directed by :</span> S. S. Rajamouli <br>
+					<span style="align:left;color:yellow;">Written by :</span> 	K. V. Vijayendra Prasad <br>
+					<span style="align:left;color:yellow;">Editor :</span> 	Kotagiri Venkateswara Rao <br>
+					<span style="align:left;color:yellow;">Cinematography :</span> K. K. Senthil Kumar <br>
+					<span style="align:left;color:yellow;">Music By :</span> M. M. Keeravani <br>
+					<span style="align:left;color:yellow;">Release Date :</span> 10 July 2015 <br>
+					<span style="align:left;color:yellow;">Available-in :</span> Disney+Hotstar <br>
+						Watch now @ <a href="https://www.hotstar.com/in/movies/baahubali-the-beginning/1000074338" target="_blank"><img src="{%static 'images/hotstar.jpg'%}" height="50" width="50"></a>
+					</td>
+					<td style="padding:20px;">
+					<h1> The 'MAGNUM OPUS' from South Indian Film Industry infact from INDIAN film Industry </h1>
+					<h2> Rating:3.5/5 </h2>
+					<p style="font-size:20px;"> &emsp; Baahubali is one of the most visually impressive films that have come from India.
+Everything about this film is good - Story, direction, beautiful cinematography, haunting 
+score and amazing visuals (though they lack some details at some places).
+
+					<br>
+					&emsp; The whole of first half seems like a little over an hour-and-a-half-long prelude for the 
+flashback episode that goes back 50 years in time. Infants, Bhallaladeva and Bahubali are 
+both heirs to the throne of Mahishmathi, when the then king dies an untimely death. The 
+queen Sivagami (Ramya Krishnan) ascends to the throne and decrees that the worthier of 
+the two cousins will be crowned king. Bhallaladeva, being the son of the younger brother 
+(Nasser) of the deceased king, who was denied the throne owing to serious character 
+flaws, inherits his father’s desire to become the emperor. <br>
+					&emsp; The best part of the film is the elaborate war sequence that plays out in the second 
+half. The ostentatious sets, breathtaking montage shots of the fictional kingdom, and the 
+sheer scale of the battle scene stand out. The inspiration from Hollywood epics like 300, 
+Troy, Lord of the Rings, Conan the Barbarian, Pirates of the Caribbean, Croods, Prince of 
+Persia (to name a few) are all too evident in the battle sequences. Yet, it is still a 
+first for Tollywood and perhaps even Indian cinema, even though the end result may be a 
+little too underwhelming. Let’s just say how much the CGI will move you will depend on 
+how much you empathise with the fact that a filmmaker has attempted it. In any case 
+Rajamouli isn’t known as much for originality as he is for delivering an overwhelming 
+cinematic experience.
+				    &emsp; As this the first part of the Bahubali series , Rajamouli ends it with a big question to 
+the audience that "WHY KATTAPPA KILLED BAHUBALI" and kept audience to eagerly wait until 
+Bahubali-The Conclusion to know the answer
+					</p>
+					</td>
+					
+				</tr>
+			</table>
+
+			
+		</div>
+		<div class="f1">
+				<p style="font-size:20px"> Connect Us Here<br>
+				<a href="http://www.youtube.com" target="_blank"class="fa fa-youtube" ></a>
+				 <a href="http://www.facebook.com" class="fa fa-facebook" ></a>
+				 <a href="http://www.instagram.com" class="fa fa-instagram" ></a><p>
+				<h3> &copy All the reviews are subject to copyright </h3>
+			</div>
+	</body>
+</html>

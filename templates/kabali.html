@@ -1,0 +1,71 @@
+{%load static%}
+<html>
+	<head>
+		<title> Movie Review </title>
+		<link rel="stylesheet" href="{%static 'css/styling.css'%}">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="shortcut icon" href="{%static 'images/logo.png' %}">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,400;1,500&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<nav>
+			<a href="#" class="logo"> <img src="{%static 'images/logo.png'%}"/> </a>
+			<ul class="menu">
+				<li> <a href="main/"> Home </a> </li>
+				<li> <a href="movies/">Movies </a> </li>
+				<li> <a href="shortfilms/">ShortFilms </a> </li>
+				<li> <a href="genres/"> Genres</a> </li>
+				<li> <a href="about/"> About Us</a> </li>
+			</ul>
+			<div class="search">
+				<form action="{% url 'search-movies' %}" method="get"></form>
+				<input type="text" id="input" placeholder="Search for favorite films" onkeyup="fun()"/>
+				<button type="submit" style="border:none;background:transparent;"><i class="fa fa-search" style="font-size:20px;color:black"></i></button>
+				</form>
+			</div>
+		</nav>
+		<div class="sdr">
+			<h2 style="padding-left:50px;"> Movies/Kabali </h2>
+			<hr>
+			<table>
+				<tr> 
+					<td>
+					<td>
+					<td style="background-color:black;color:white;text-align:center;font-style:bold;"> <img src="{%static 'images/kabali.png'%}" height="350" width="320">
+					<br> <br> <span style="align:left;color:yellow;">Cast :</span> Rajinikanth, Radhika Apte,Dhansika <br>
+					<span style="align:left;color:yellow;">Written & Directed by :</span> P.A.Ranjith<br>
+					<span style="align:left;color:yellow;">Editor :</span> Praveen K L<br>
+					<span style="align:left;color:yellow;">Cinematography :</span> Murali G  <br>
+					<span style="align:left;color:yellow;">Music Director :</span> Santhosh Narayanan <br>
+					<span style="align:left;color:yellow;">Release date :</span> 22 July 2016 <br>
+					<span style="align:left;color:yellow;">Available-in :</span> Prime Video <br><br>
+						Watch now @ <a href="https://www.amazon.com/Kabali-Rajinikanth/dp/B06WWBBX4P" target="_blank"><img src="{%static 'images/prime.png'%}" height="50" width="100"></a>
+					</td>
+					<td style="padding:20px;">
+					<h1> Kabali Brings Back Vintage Rajinikanth!!!</h1>
+					<h2> Rating:3/5 </h2>
+					<p style="font-size:20px;"> &emsp;Yes Kabali brings back vintage Rajinikanth. Kabali is all about how a local gangster would become a international don. To achieve this what sacrifices he have to make?
+The film is all about the celebration of rajinism.The  major assets of this film is looks of Rajinikanth . Kabaleeswaran alias Kabali (Rajinikanth) is a revolutionary gang leader fighting for the rights of the migrant Telugu workers in Kuala Lumpur, Malaysia. He takes on a ruthless local mafia lord named Tony Lee (Winston Chao) who plans a conspiracy and sends him to prison for 25 years.
+						<br>
+					&emsp;  Kabali releases from jail only to find his empire and family decimated and Kuala Lumpur being ruled by Tony Lee. Kabali sets out on a mission to take on Tony Lee once again with vengeance and in the process, finds out that his wife Kumudhavalli (Radhika Apte) is still alive. The rest of the story is all about Rajini taking his revenge.
+						<br>
+					&emsp; Kabali is celebration of Rajinikanth is definitely ,but for others it may me a one time watchable .Rajinikanth and Radhika apte are promising in their roles, and surprising factor is dansika her attitude, acting is major highlight. The directors hard work is clearly visible on screen ,but the confused narration is what that damages the storyline , and editing too not up to to mark. Background score is the major highlight, that makes everyone feel thrilled and excited every time. So if you are fan of thalaiva it will be a celebration ,but for others it will be mere a film with ups and lows and some lag. So if you are fan of Rajini it is must-watch film .For others it is one time watchable.
+					</p>
+					</td>
+					
+				</tr>
+			</table>
+
+			
+		</div>
+		<div class="f1">
+				<p style="font-size:20px"> Connect Us Here<br>
+				<a href="http://www.youtube.com" target="_blank"class="fa fa-youtube" ></a>
+				 <a href="http://www.facebook.com" class="fa fa-facebook" ></a>
+				 <a href="http://www.instagram.com" class="fa fa-instagram" ></a><p>
+				<h3> &copy All the reviews are subject to copyright </h3>
+			</div>
+	</body>
+</html>

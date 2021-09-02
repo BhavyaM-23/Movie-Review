@@ -1,0 +1,87 @@
+{%load static%}
+<html>
+	<head>
+		<title> Movie Review </title>
+		<link rel="stylesheet" href="{%static 'css/styling.css'%}">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="shortcut icon" href="{%static 'images/logo.png' %}">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,400;1,500&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<nav>
+			<a href="#" class="logo"> <img src="{%static 'images/logo.png'%}"/> </a>
+			<ul class="menu">
+				<li> <a href="main/"> Home </a> </li>
+				<li> <a href="movies/">Movies </a> </li>
+				<li> <a href="shortfilms/">ShortFilms </a> </li>
+				<li> <a href="genres/"> Genres</a> </li>
+				<li> <a href="about/"> About Us</a> </li>
+			</ul>
+			<div class="search">
+				<form action="{% url 'search-movies' %}" method="get"></form>
+				<input type="text" id="input" placeholder="Search for favorite films" onkeyup="fun()"/>
+				<button type="submit" style="border:none;background:transparent;"><i class="fa fa-search" style="font-size:20px;color:black"></i></button>
+				</form>
+			</div>
+		</nav>
+		<div class="sdr">
+			<h2 style="padding-left:50px;"> Movies/Jathiratnalu </h2>
+			<hr>
+			<table>
+				<tr> 
+					<td>
+					<td>
+					<td style="background-color:black;color:white;text-align:center;font-style:bold;"> <img src="{%static 'images/jathiratnalu.jpg'%}" height="350" width="300">
+					<br> <br> <span style="align:left;color:yellow;">Cast :</span>  Naveen Polishetty,Priyadarshi,<br>Rahul Ramakrishna,Faria Abdullah <br>
+					<span style="align:left;color:yellow;">Written & Directed by :</span> Anudeep KV<br>
+					<span style="align:left;color:yellow;">Editor :</span> 	Abhinav <br>
+					<span style="align:left;color:yellow;">Cinematography :</span> Siddam Manohar <br>
+					<span style="align:left;color:yellow;">Music Director :</span> 	Radhan <br>
+					<span style="align:left;color:yellow;">Release date :</span> 11 March 2021 <br>
+					<span style="align:left;color:yellow;">Available-in :</span> Prime Video <br><br>
+						Watch now @ <a href="https://www.primevideo.com/detail/0QX66SSDNUNAAZ7YPX6I82BD30/?ref_=dvm_pds_gen_in_as_s_g_dsafeedn" target="_blank"><img src="{%static 'images/prime.png'%}" height="50" width="100"></a>
+					</td>
+					<td style="padding:20px;">
+					<h1> A madcap comedy featuring 'silly fools'</h1>
+					<h2> Rating:3/5 </h2>
+					<p style="font-size:20px;"> &emsp;Anudeep KV’s Jathi Ratnalu is not meant to be taken seriously and that’s made clear from the get go. 
+It wastes no time getting into the thick of things, even before the titles roll and while it is a 
+fun-rollercoaster ride with no time to lose, it makes one wonder if the film needed to be as long as 
+it is to tell the almost non-existent story.<br>
+					&emsp;  Srikanth (Naveen Polishetty) wants to escape to the city so he gets a fresh start. He’s a pro at helping
+out the ladies of their village with perfect accessories to their sarees but wants to be known for more 
+than that. His father (Tanikella Bharani) on the other hand wants him to stay back and run the ladies 
+emporium they own. Sekhar (Priyadarshi) was born to the sound of a cooker whistle and is obsessed with 
+everything to do with rice. Ravi (Rahul Ramakrishna) is an alcoholic in state of perpetual heartbreak. 
+The city helps them meet Chitti (Faria Abdullah), a rich kid who falls for Srikanth and has a sad backstory 
+of her own. But destiny also brings them in the path of Sports Minister Chanakya (Murli Sharma), who’s always
+up to something shady. When the trio are framed for a crime they did not commit, all ‘hell and heaven’ breaks
+loose.<br>
+					&emsp; Despite motley of characters and a lot happening on-screen, Jathi Ratnalu does not have much to tell in terms 
+of story. Srikanth and his friends are a touch wiser by the time they return back to Jogipet, it’s even hinted 
+that they might head to Dubai next, but there’s not much in terms of storytelling that keeps you invested. Sure
+there’s the matter of what incriminating video Chanakya is working so hard to bury, there’s also the matter of a 
+local electric company headed by Subhash K Chandra (Subhalekha Sudhakar) that’s inserted into the story, but that’s 
+not what drives you to sit through two and a half hours of this film.<br>
+					&emsp; Silly fools are trying to break the rules and fighting these goons,” go the lyrics of a song that plays in the 
+film. And that one-liner is enough to describe the film best. Jathi Rathnalu is a mixed bag, but then again, 
+asale life oka zindagi aipoindi, so go watch it for the comedy and the performances.
+					</p>
+					</td>
+					
+				</tr>
+			</table>
+
+			
+		</div>
+		<div class="f1">
+				<p style="font-size:20px"> Connect Us Here<br>
+				<a href="http://www.youtube.com" target="_blank"class="fa fa-youtube" ></a>
+				 <a href="http://www.facebook.com" class="fa fa-facebook" ></a>
+				 <a href="http://www.instagram.com" class="fa fa-instagram" ></a><p>
+				<h3> &copy All the reviews are subject to copyright </h3>
+			</div>
+	</body>
+</html>

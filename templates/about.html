@@ -13,15 +13,17 @@
 		<nav>
 			<a href="#" class="logo"> <img src="{%static 'images/logo.png'%}"/> </a>
 			<ul class="menu">
-				<li> <a href="main/"> Home </a> </li>
-				<li> <a href="movies/">Movies </a> </li>
-				<li> <a href="shortfilms/">ShortFilms </a> </li>
-				<li> <a href="genres/"> Genres</a> </li>
-				<li> <a href="about/"> About Us</a> </li>
+				<li> <a href="{%url 'home'%}"> Home </a> </li>
+				<li> <a href="{%url 'movies'%}">Movies </a> </li>
+				<li> <a href="{%url 'shortfilms'%}">ShortFilms </a> </li>
+				<li> <a href="{%url 'genres'%}"> Genres</a> </li>
+				<li> <a href="{%url 'about'%}"> About Us</a> </li>
 			</ul>
 			<div class="search">
-				<input type="text" placeholder="Search for favorite films"/>
-				<i class="fa fa-search" style="color:black"></i>
+				<form action="{% url 'search-movies' %}" method="get"></form>
+				<input type="text" id="input" placeholder="Search for favorite films" onkeyup="fun()"/>
+				<button type="submit" style="border:none;background:transparent;"><i class="fa fa-search" style="font-size:20px;color:black"></i></button>
+				</form>
 			</div>
 		</nav>
 		<div class="m">

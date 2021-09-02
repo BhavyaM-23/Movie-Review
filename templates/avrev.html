@@ -20,8 +20,10 @@
 				<li> <a href="about/"> About Us</a> </li>
 			</ul>
 			<div class="search">
-				<input type="text" placeholder="Search for favorite films"/>
-				<i class="fa fa-search" style="color:black"></i>
+				<form action="{% url 'search-movies' %}" method="get"></form>
+				<input type="text" id="input" placeholder="Search for favorite films" onkeyup="fun()"/>
+				<button type="submit" style="border:none;background:transparent;"><i class="fa fa-search" style="font-size:20px;color:black"></i></button>
+				</form>
 			</div>
 		</nav>
 		<div class="sdr">
@@ -36,6 +38,7 @@
 					<span style="align:left;color:yellow;">Written & Directed by :</span> Trivikram Srinivas<br>
 					<span style="align:left;color:yellow;">Editor :</span> Naveen Nooli <br>
 					<span style="align:left;color:yellow;">Cinematography :</span> P.S Vinod <br>
+					<span style="align:left;color:yellow;">Music Director :</span> S Thaman <br>
 					<span style="align:left;color:yellow;">Release date :</span> 12 January 2020 <br>
 					<span style="align:left;color:yellow;">Available-in :</span> Netflix <br>
 						Watch now @ <a href="https://www.netflix.com/in/title/81252029" target="_blank"><img src="{%static 'images/netflix.jpg'%}" height="50" width="50"></a>

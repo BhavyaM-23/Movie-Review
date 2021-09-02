@@ -13,15 +13,17 @@
 		<nav>
 			<a href="#" class="logo"> <img src="{%static 'images/logo.png'%}"/> </a>
 			<ul class="menu">
-				<li> <a href="main/"> Home </a> </li>
-				<li> <a href="movies/">Movies </a> </li>
-				<li> <a href="shortfilms/">ShortFilms </a> </li>
-				<li> <a href="genres/"> Genres</a> </li>
-				<li> <a href="about/"> About Us</a> </li>
+				<li> <a href="{% url 'home'%}"> Home </a> </li>
+				<li> <a href="{% url 'movies'%}">Movies </a> </li>
+				<li> <a href="{% url 'shortfilms'%}">ShortFilms </a> </li>
+				<li> <a href="{% url 'genres' %}"> Genres</a> </li>
+				<li> <a href="{%url 'about'%}"> About Us</a> </li>
 			</ul>
 			<div class="search">
-				<input type="text" placeholder="Search for favorite films"/>
-				<i class="fa fa-search" style="color:black"></i>
+				<form action="{% url 'search-movies' %}" method="get"></form>
+				<input type="text" id="input" placeholder="Search for favorite films" onkeyup="fun()"/>
+				<button type="submit" style="border:none;background:transparent;"><i class="fa fa-search" style="font-size:20px;color:black"></i></button>
+				</form>
 			</div>
 		</nav>
 		<div class="m1">
@@ -48,7 +50,7 @@
 					<br> <br> <span style="font-size:20px;align:left;color:006666;">Movie :</span> JANATHA GARAGE <br>
 					<span style="font-size:20px;align:left;color:006666;">Cast :</span> Jr.NTR,Mohan Lal,<br>Samantha,Nitya Menon <br>
 					<span style="font-size:20px;align:left;color:006666;">Languages :</span> Telugu,Tamil,<br>Malayalam
-						<br> <a href="janatha/" style="text-decoration:None;color:yellow;"> Read the review </a>
+						<br> <a href="{%url 'janatha'%}" style="text-decoration:None;color:yellow;"> Read the review </a>
 					</td>
 					<td>
 					<td>
@@ -58,7 +60,7 @@
 					<br> <br> <span style="font-size:20px;align:left;color:006666;">Movie :</span> ALA VAIKUNTAPURAMLO <br>
 					<span style="font-size:20px;align:left;color:006666;">Cast :</span> Allu Arjun,Tabu,Pooja Hegde <br>
 					<span style="font-size:20px;align:left;color:006666;">Language :</span> Telugu
-						<br> <a href="avrev/" style="text-decoration:None;color:yellow;"> Read the review </a>
+						<br> <a href="{%url 'av'%}" style="text-decoration:None;color:yellow;"> Read the review </a>
 					</td>
 					<td>
 						<td>
@@ -66,7 +68,7 @@
 						<br> <br> <span style="font-size:20px;text-align:left;color:006666;">Movie :</span> M.S DHONI <br>
 						<span style="font-size:20px;align:left;color:006666;">Cast :</span> Sushanth Singh Rajput,Kiara Advani,Disha Patani <br>
 						<span style="font-size:20px;align:left;color:006666;">Languages :</span> Hindi,Telugu,Tamil
-							<br> <a href="msdhoni/" style="text-decoration:None;color:yellow;"> Read the review </a>
+							<br> <a href="{% url 'msdhoni'%}" style="text-decoration:None;color:yellow;"> Read the review </a>
 						</td>
 
 				</tr>
@@ -79,11 +81,11 @@
 					
 					<td>
 					<td>
-					<td style="background-color:black;color:white;text-align:center;font-style:bold;"> <img src="{%static 'images/m3.jpg'%}" height="200" width="200">
-					<br> <br> <span style="font-size:20px;align:left;color:006666;">Movie :</span> DARBAR <br>
-					<span style="font-size:20px;align:left;color:006666;">Cast :</span> Rajinikanth <br>
-					<span style="font-size:20px;align:left;color:006666;">Languages :</span> Hindi,Tamil,Telugu
-						<br> <a href="#" style="text-decoration:None;color:yellow;"> Read the review </a> 
+					<td style="background-color:black;color:white;text-align:center;font-style:bold;"> <img src="{%static 'images/kabali.png'%}" height="200" width="250">
+					<br> <br> <span style="font-size:20px;align:left;color:006666;">Movie :</span> KABALI <br>
+					<span style="font-size:20px;align:left;color:006666;">Cast :</span>  Rajinikanth, Radhika Apte,Dhansika <br>
+					<span style="font-size:20px;align:left;color:006666;">Languages :</span> Tamil,Telugu,Hindi
+						<br> <a href="{% url 'kabali'%}" style="text-decoration:None;color:yellow;"> Read the review </a>
 					</td>
 					<td>
 					<td>
@@ -103,7 +105,7 @@
 					<br> <br> <span style="font-size:20px;align:left;color:006666;">Movie :</span> GULLY BOY <br>
 					<span style="font-size:20px;align:left;color:006666;">Cast :</span> Ranveer Singh,AliaBhatt <br>
 					<span style="font-size:20px;align:left;color:006666;">Language :</span> Hindi
-						<br> <a href="gully/" style="text-decoration:None;color:yellow;"> Read the review </a>
+						<br> <a href="{% url 'gully'%}" style="text-decoration:None;color:yellow;"> Read the review </a>
 					</td>
 					<td>
 					<td>
